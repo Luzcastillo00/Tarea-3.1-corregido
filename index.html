@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>DIC cafe</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header_nav">
+    <nav class="header_nav">
+      <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
+      <ul class="global_nav">
+        <a href="index.html" class="global_nav_item">
+          <li>Inicio</li>
+        </a>
+        <a href="blueberry_pancakes.html" class="global_nav_item">
+          <li>Menú</li>
+        </a>
+        <a href="contact.html" class="global_nav_item">
+          <li>Contacto</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <div class="menu_key section_inner">
+  </div>
+  <section class="section_inner">
+    <div class="section_title">
+      <h1>Venta de granos de café</h1>
+    </div>
+  </section>
+
+  <section class="section_inner menu_section">
+    <div class="center">
+      <h1 class="menu_title">Selección</h1>
+    </div>
+    <ul class="menu_list coffee_menu">
+      <li class="caffee_menu_list_item">
+        <div class="caffee_menu_content">
+          <h2 class="menu_item_title">Mezcla original 200g</h2>
+          <p class="caffee_menu_price">500 yenes</p>
+        </div>
+        <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+      </li>
+      <li class="caffee_menu_list_item">
+        <div class="caffee_menu_content">
+          <h2 class="menu_item_title">Mezcla original 500g</h2>
+          <p class="caffee_menu_price">900 yenes</p>
+        </div>
+        <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+      </li>
+      <li class="caffee_menu_list_item">
+        <div class="caffee_menu_content">
+          <h2 class="menu_item_title">Mezcla especial 200g</h2>
+          <p class="caffee_menu_price">700 yenes</p>
+        </div>
+        <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+      </li>
+      <li class="caffee_menu_list_item">
+        <div class="caffee_menu_content">
+          <h2 class="menu_item_title">Mezcla especial 500g</h2>
+          <p class="caffee_menu_price">1200 yenes</p>
+        </div>
+        <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+      </li>
+    </ul>
+    <h2>Información del envío</h2>
+    <ul>
+      <li>・Envío de 500 yenes para total inferior a 1000 yenes</li>
+      <li>・Envío de 250 yenes para total de 1000 yenes o más</li>
+      <li>・Envío gratuito para total de 3000 yenes o más</li>
+    </ul>
+  </section>
+
+  <section class="section_inner">
+    <h2>Realizar pedido</h2>
+    <form>
+      <p>Selecciona un producto</p>
+
+      <div>
+        <select id="product" required>
+          <option hidden value="0">Selecciona una opción</option>
+          <option value="1">Mezcla original 200g 500 yenes</option>
+          <option value="2">Mezcla original 500g 900 yenes</option>
+          <option value="3">Mezcla especial 200g 700 yenes</option>
+          <option value="4">Mezcla especial 500g 1200 yenes</option>
+        </select>
+        <p>Selecciona la cantidad</p>
+        <input type="number" min="1" max="5" id="number" required>
+      </div>
+      <br>
+      <input type="button" class="btn" value="Agregar" onclick="add()">
+      <input type="button" class="btn" value="Total" onclick="calc()">
+    </form>
+  </section>
+  <footer class="footer">
+    <n>
+      <ul class="footer_nav">
+        <a href="index.html" class="footer_nav_item">
+          <li>Inicio</li>
+        </a>
+        <a href="blueberry_pancakes.html" class="footer_nav_item">
+          <li>Menú</li>
+        </a>
+        <a href="contact.html" class="footer_nav_item">
+          <li>Contacto</li>
+        </a>
+        <a href="contact.html" class="footer_nav_item">
+          <li>
+            <img src="images/sample_logo_w.png" class="footer_logo">
+          </li>
+        </a>
+      </ul>
+
+      </nav>
+      <p class="footer_right">© DIVE INTO CODE Corp. All RIGHTS RESERVED.</p>
+  </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
